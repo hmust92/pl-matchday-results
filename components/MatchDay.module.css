@@ -1,0 +1,8 @@
+.card {
+    width: 240px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 5px #b4b4b4;
+}
