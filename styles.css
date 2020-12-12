@@ -1,8 +1,21 @@
 html {
     height: 100vh;
-    background: #f8fafb;
+    background: #f0f0f0;
+    font-family: Helvetica, sans-serif;
 }
 
 body {
     margin: 0px;
+}
+
+h1 {
+    font-family: Courier New, serif;
+    font-size: 48px;
+
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
 }
