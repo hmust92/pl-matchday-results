@@ -29,7 +29,7 @@ const Index = () => {
 
     return (
         <div className="p24">
-            <h1>Match Day 12</h1>
+            <h1>Match Day {matchDay}</h1>
             <div className="cardsContainer">
                 {events.map(({ id, ...event }) => (
                     <MatchDayCard key={id} {...event} />
