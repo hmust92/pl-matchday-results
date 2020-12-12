@@ -7,7 +7,9 @@ import MatchDayCard from "../components/MatchDayCard";
 const fetcher = (url) => axios.get(url).then((response) => response.data);
 
 const Index = () => {
-    const { data: events, error } = useSWR("/api/matchday", fetcher);
+    const { data = {}, error } = useSWR("/api/matchDay", fetcher);
+
+    const { matchDay, events } = data;
 
     if (error) return <ErrorPage statusCode={error.response.status} />;
 
